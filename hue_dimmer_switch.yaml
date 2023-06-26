@@ -73,9 +73,9 @@ action:
       # interaction_deviceid: '{{ trigger.event.data.device_id }}'
       interaction_type: '{{ trigger.event.data.type }}'
       interaction_button: '{{ trigger.event.data.subtype }}'
-  - service: notify.mobile_app
-    data:
-      message: 'Test DeviceID: {{ interaction_deviceid }} TYPE: {{ interaction_type }} BUTTON#: {{ interaction_button }}'
+  # - service: notify.mobile_app
+  #   data:
+  #     message: 'Test DeviceID: {{ interaction_deviceid }} TYPE: {{ interaction_type }} BUTTON#: {{ interaction_button }}'
   - choose:
     - conditions:
       - '{{ interaction_button == 1 and interaction_type == "short_release" }}'
