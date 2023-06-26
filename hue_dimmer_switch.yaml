@@ -9,7 +9,7 @@ blueprint:
         device:
           filter:
             integration: hue
-            model: BSB002
+            model: RWL021
 
 trigger:
   - platform: state
