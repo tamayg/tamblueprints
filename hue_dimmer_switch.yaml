@@ -14,7 +14,49 @@ blueprint:
             model: "Hue dimmer switch (RWL021)"
     btn1_press:
       name: Button 1 (ON) press
-      description: Action to run
+      description: Action to run when button 1 is pressed
+      default: []
+      selector:
+        action: {}
+    btn1_hold:
+      name: Button 1 (ON) hold
+      description: Action to run when button 1 is hold down
+      default: []
+      selector:
+        action: {}
+    btn2_press:
+      name: Button 2 (INCREASE) press
+      description: Action to run when button 2 is pressed
+      default: []
+      selector:
+        action: {}
+    btn2_hold:
+      name: Button 2 (INCREASE) hold
+      description: Action to run when button 2 is hold down
+      default: []
+      selector:
+        action: {}
+    btn3_press:
+      name: Button 3 (DECREASE) press
+      description: Action to run when button 3 is pressed
+      default: []
+      selector:
+        action: {}
+    btn3_hold:
+      name: Button 3 (DECREASE) hold
+      description: Action to run when button 3 is hold down
+      default: []
+      selector:
+        action: {}
+    btn4_press:
+      name: Button 4 (OFF) press
+      description: Action to run when button 4 is pressed
+      default: []
+      selector:
+        action: {}
+    btn4_hold:
+      name: Button 4 (OFF) hold
+      description: Action to run when button 4 is hold down
       default: []
       selector:
         action: {}
