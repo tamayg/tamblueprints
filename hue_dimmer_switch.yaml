@@ -12,6 +12,12 @@ blueprint:
             model: RWL021
           - integration: hue
             model: "Hue dimmer switch (RWL021)"
+    btn1_press:
+      name: Button 1 (ON) press
+      description: Action to run
+      default: []
+      selector:
+        action: {}
 
 trigger:
   - platform: event
@@ -21,8 +27,8 @@ trigger:
 
 action:
   - variables:
-      interaction_id: '{{ trigger.event.data.id }}'
-      interaction_deviceid: '{{ trigger.event.data.device_id }}'
+      # interaction_id: '{{ trigger.event.data.id }}'
+      # interaction_deviceid: '{{ trigger.event.data.device_id }}'
       interaction_type: '{{ trigger.event.data.type }}'
       interaction_button: '{{ trigger.event.data.subtype }}'
   - service: notify.mobile_app
