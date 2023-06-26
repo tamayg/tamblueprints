@@ -14,8 +14,11 @@ blueprint:
             model: "Hue dimmer switch (RWL021)"
 
 trigger:
-  - platform: state
-    entity_id: !input dimmer_switch
+  - platform: event
+    event_type: hue_event
+    event_data:
+      device_id: !input dimmer_switch
+
 action:
   - variables:
       interaction_id: '{{ trigger.event.data.id }}'
