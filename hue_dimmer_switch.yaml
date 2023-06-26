@@ -17,6 +17,10 @@ trigger:
   - platform: state
     entity_id: !input dimmer_switch
 action:
-  - service: >
-      "haaa"
-    target: !input dimmer_switch
+  - variables:
+      interaction_id: '{{ trigger.event.data.id }}'
+      interaction_type: '{{ trigger.event.data.type }}'
+      interaction_button: '{{ trigger.event.data.subtype }}'
+  - service: notify.mobile_app
+    data:
+      message: Test
