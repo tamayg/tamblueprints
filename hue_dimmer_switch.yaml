@@ -5,6 +5,11 @@ blueprint:
   input:
     motion_sensor:
       name: target light
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: motion
+    target_light:
   trigger:
     - platform: state
       entity_id: !input motion_sensor
