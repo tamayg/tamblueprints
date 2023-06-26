@@ -5,6 +5,7 @@ blueprint:
   input:
     motion_sensor:
       target_light:
+        name: "target light"
   trigger:
     platform: state
     entity_id: !input motion_sensor
