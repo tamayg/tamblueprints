@@ -27,4 +27,4 @@ action:
       interaction_button: '{{ trigger.event.data.subtype }}'
   - service: notify.mobile_app
     data:
-      message: 'Test DeviceID: {{ interaction_id }} TYPE: {{ interaction_type }} BUTTON#: {{ interaction_button }}'
+      message: 'Test DeviceID: {{ interaction_deviceid }} TYPE: {{ interaction_type }} BUTTON#: {{ interaction_button }}'
