@@ -16,5 +16,5 @@ trigger:
     entity_id: !input motion_sensor
 action:
   - service: >
-      haaa
+      "haaa"
     target: !input motion_sensor
