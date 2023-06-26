@@ -3,8 +3,8 @@ blueprint:
   description: "Automation for Hue Dimmer Switch Remote"
   domain: automation
   input:
-    motion_sensor:
-      name: Motion Sensor
+    dimmer_switch:
+      name: Dimmer Switch (Remote Control)
       selector:
         device:
           filter:
@@ -15,8 +15,8 @@ blueprint:
 
 trigger:
   - platform: state
-    entity_id: !input motion_sensor
+    entity_id: !input dimmer_switch
 action:
   - service: >
       "haaa"
-    target: !input motion_sensor
+    target: !input dimmer_switch
