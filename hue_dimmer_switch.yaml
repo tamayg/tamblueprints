@@ -78,26 +78,34 @@ action:
   #     message: 'Test DeviceID: {{ interaction_deviceid }} TYPE: {{ interaction_type }} BUTTON#: {{ interaction_button }}'
   - choose:
     - conditions:
-      - '{{ interaction_button == 1 and interaction_type == "short_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 1 and interaction_type == "short_release" }}'
       sequence: !input btn1_press
     - conditions:
-      - '{{ interaction_button == 1 and interaction_type == "long_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 1 and interaction_type == "long_release" }}'
       sequence: !input btn1_hold
     - conditions:
-      - '{{ interaction_button == 2 and interaction_type == "short_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 2 and interaction_type == "short_release" }}'
       sequence: !input btn2_press
     - conditions:
-      - '{{ interaction_button == 2 and interaction_type == "long_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 2 and interaction_type == "long_release" }}'
       sequence: !input btn2_hold
     - conditions:
-      - '{{ interaction_button == 3 and interaction_type == "short_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 3 and interaction_type == "short_release" }}'
       sequence: !input btn3_press
     - conditions:
-      - '{{ interaction_button == 3 and interaction_type == "long_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 3 and interaction_type == "long_release" }}'
       sequence: !input btn3_hold
     - conditions:
-      - '{{ interaction_button == 4 and interaction_type == "short_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 4 and interaction_type == "short_release" }}'
       sequence: !input btn4_press
     - conditions:
-      - '{{ interaction_button == 4 and interaction_type == "long_release" }}'
+      - condition: template
+        value_template: '{{ interaction_button == 4 and interaction_type == "long_release" }}'
       sequence: !input btn4_hold
