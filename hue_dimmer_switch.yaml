@@ -9,6 +9,7 @@ blueprint:
         device:
           filter:
             integration: hue
+            device_class: button
 
 trigger:
   - platform: state
