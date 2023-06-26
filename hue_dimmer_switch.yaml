@@ -22,6 +22,7 @@ trigger:
 action:
   - variables:
       interaction_id: '{{ trigger.event.data.id }}'
+      interaction_deviceid: '{{ trigger.event.data.device_id }}'
       interaction_type: '{{ trigger.event.data.type }}'
       interaction_button: '{{ trigger.event.data.subtype }}'
   - service: notify.mobile_app
