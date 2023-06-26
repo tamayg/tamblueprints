@@ -8,8 +8,10 @@ blueprint:
       selector:
         device:
           filter:
-            integration: hue
+          - integration: hue
             model: RWL021
+          - integration: hue
+            model: "Hue dimmer switch (RWL021)"
 
 trigger:
   - platform: state
