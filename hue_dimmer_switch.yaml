@@ -1,7 +1,7 @@
 blueprint:
   name: Philips Hue Dimmer switch [tg]
   description: "Automation for Hue Dimmer Switch Remote"
-  domain: "automation"
+  domain: automation
   input:
     motion_sensor:
       name: Motion Sensor
