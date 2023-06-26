@@ -1,0 +1,10 @@
+blueprint:
+  name: Philips Hue Dimmer switch [tg]
+  description: "Automation for Hue Dimmer Switch Remote"
+  domain: "automation"
+  input:
+    motion_sensor:
+      target_light:
+  trigger:
+    platform: state
+    entity_id: !input motion_sensor
