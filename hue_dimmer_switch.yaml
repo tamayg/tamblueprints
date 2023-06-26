@@ -9,7 +9,7 @@ blueprint:
         device:
           filter:
             integration: hue
-            device_class: button
+            model: BSB002
 
 trigger:
   - platform: state
