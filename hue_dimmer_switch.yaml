@@ -10,10 +10,11 @@ blueprint:
           domain: binary_sensor
           device_class: motion
     target_light:
-  trigger:
-    - platform: state
-      entity_id: !input motion_sensor
-  action:
-    - service: >
-        haaa
-      target: !input motion_sensor
+
+trigger:
+  - platform: state
+    entity_id: !input motion_sensor
+action:
+  - service: >
+      haaa
+    target: !input motion_sensor
